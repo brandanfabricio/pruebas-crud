@@ -1,0 +1,36 @@
+@host = http://localhost:3000/api/empleado
+
+### Todos los elementos 
+
+GET {{host}}
+
+### un elemento
+
+GET {{host}}/2
+
+### borrar
+
+DELETE {{host}}/3
+
+
+###agregar
+
+POST {{host}}/add
+Content-Type: application/json
+
+{
+    "nombre":"Batman",
+    "sallario":50000
+}
+
+
+### atualizar
+
+PUT  {{host}}/update/4
+Content-Type: application/json
+
+{
+    "nombre":"Tamara",
+    "sallario":2000
+
+}

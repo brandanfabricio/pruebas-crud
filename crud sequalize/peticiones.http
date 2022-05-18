@@ -1,0 +1,47 @@
+@host = http://localhost:3000
+
+### get peticion a todos los elementos 
+GET  {{host}}/api/films
+
+### Post peticion  añadiendo elementos 
+
+POST {{host}}/api/films
+Content-Type: application/json
+
+{
+               
+      "title":"aaaa",
+        "description": " viedo de mi gran polla",
+        "score" : 1,
+        "director": "yooo"
+}
+
+### editar 
+
+PUT  {{host}}/api/films/1
+Content-Type: application/json
+
+{
+               
+      "title":"prueba de actualizacion",
+        "description": "documental",
+        "score" : 6,
+        "director": "yooo"
+}
+
+
+
+### Eliminar Elementos 
+DELETE  {{host}}/api/films/2
+
+
+### Crear Ususarios
+
+POST {{host}}/api/user//register
+Content-Type: application/json
+
+{
+  "username":"fabricio3",
+  "email":"aaa@lee.com",
+  "password":"123456"
+}

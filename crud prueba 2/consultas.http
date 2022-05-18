@@ -1,0 +1,36 @@
+@host = http://localhost:3000
+
+#### todos los datos 
+GET {{host}}/api
+
+### agregar datos
+POST {{host}}/api
+Content-Type: application/json
+
+{
+    "name":"tamara",
+    "address":"en mi casa",
+    "phone":"123123aas"    
+}
+
+
+###actualizar 
+
+PUT {{host}}/api/updata/3
+Content-Type: application/json
+
+{
+    "name":"Tamara",
+    "address":"ReginoRacedo",
+    "phone":"3863500516"
+}
+
+
+###borrar
+
+DELETE {{host}}/api/delete/2
+
+
+### un solo elemento
+
+GET {{host}}/api/3
